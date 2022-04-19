@@ -1,0 +1,332 @@
+/* ------google fonts here ------------*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  color: #fff;
+}
+:root {
+  --prime: #00ff34;
+}
+body {
+  background-color: #131b2b;
+}
+
+/* ------------style navbar----------------- */
+.navbar {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  padding: 30px 120px;
+  background-color: transparent;
+  justify-content: space-between;
+  z-index: 1111;
+  transition: 0.5s ease;
+}
+.navbar.sticky{
+
+  padding: 6px 60px;
+  background: #0c1518;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+.navbar.sticky .logo{
+font-size: 2em;
+color: dodgerblue ;
+
+
+}
+.logo {
+  font-size: 2.8em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.logo A {
+  color: var(--prime);
+}
+
+ol {
+  display: flex;
+  margin: auto 0;
+}
+ol li {
+  list-style: none;
+  margin-right: 20px;
+}
+ol li a {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+ol li:hover a {
+  color: dodgerblue;
+}
+
+/* -----------------common size for all section------------ */
+.view {
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+}
+
+/* -------style home section------------- */
+.home {
+  display: flex;
+  min-height: 120vh;
+  align-items: center;
+  justify-content: center;
+}
+.banner {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url(https://c4.wallpaperflare.com/wallpaper/328/683/607/man-fitness-gym-arms-wallpaper-preview.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(25%);
+}
+.highlights {
+  width: 70%;
+  position: relative;
+  display: inline-block;
+  z-index: 11;
+}
+.highlights h3 {
+  display: inline;
+  font-size: 2vw;
+  padding: 5px 20px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  border-left: 6px solid var(--prime);
+}
+
+.highlights h1 {
+  font-size: 8vw;
+  text-align: center;
+  font-weight: normal;
+}
+.highlights b {
+  color: dodgerblue;
+  font-weight: 800;
+  font-family: sans-serif;
+}
+.highlights .tagline {
+  color: #aee52f;
+  font-size: 3vw;
+  text-align: center;
+  font-weight: normal;
+}
+.highlights .join {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 800;
+  padding: 5px 20px;
+  font-size: 1.5vw;
+  margin-top: 1.2em;
+  color: var(--prime);
+  border: 2px solid var(--prime);
+  border-radius: 50px;
+  background: transparent;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+.highlights .join:hover {
+  color: black;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  background: rgb(3, 113, 143);
+}
+
+/* -------------------common style for all section--------- */
+
+.main {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.main h2 {
+  font-size: 2.5vw;
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  display: inline-block;
+}
+span {
+  color: var(--prime);
+}
+.main h2:hover {
+  position: absolute;
+  content: "";
+  background: var(--prime);
+  height: 3px;
+  width: 30%;
+  right: -15px;
+  bottom: 0;
+  border-radius: 50px;
+}
+.main h6 {
+  margin-top: 10px;
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.content {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 0 30px;
+  justify-content: center;
+}
+
+/* -------style about section---------- */
+
+.about .content .cols {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0px;
+}
+.about .content .cols p b {
+  font-size: 55px;
+  margin-right: 2px;
+}
+.about .content .frame{
+  position: relative;
+  width: 250px;
+padding: 20px;
+margin: 100px;
+background: #222;
+box-shadow: 0 14px 15px rgba(0,0,0,0.5);
+
+}
+.about .content .frame .box{
+  position: relative;
+  height: 300px;
+  width: 200px;
+  overflow: hidden;
+}
+.about .content .frame .box img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(70%);}
+
+
+/* -------------style workout section------------ */
+.workout .content{
+  flex-wrap: wrap;
+
+}
+.workout .content .frame{
+  position: relative;
+  width: 350px;
+padding: 20px;
+margin: 100px;
+background: #222;
+box-shadow: 0 14px 15px rgba(0,0,0,0.5);
+
+}
+.workout .content .frame .box{
+  position: relative;
+  height: 200px;
+  width: 300px;
+  overflow: hidden;
+}
+.workout .content .frame .box img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+
+}
+.workout .content .frame .box:hover img{
+  filter: brightness(100%);
+  transform: scale(1.08s);
+}
+
+.workout .content .frame .title{
+  color: dodgerblue;
+  padding: 5px 0;
+}
+
+
+
+
+/* --------style contact section----------- */
+.contact .content{
+min-height: 100vh;
+
+}
+.contact .content form{
+  margin: auto 0;
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+
+}
+.contact .content form input{
+color: #222;
+width: 100%;
+height: 50px;
+padding: 0 10px;
+font-size: 18px;
+border: 1px solid #878787;
+border-radius: 4px;
+margin: 15px 0;
+background: transparent;
+
+
+}
+
+.contact .content form textarea{
+width: 100%;
+padding: 10px;
+color: black;
+font-size: 18px;
+border: 1px solid #878787;
+border-radius: 4px;
+margin: 15px 0;
+background:transparent;
+}
+.contact .content form input:focus,
+.contact .content form textarea:focus{
+  border: 2px solid dodgerblue;
+  transition: 0.1s ease;
+}
+/* making responsive */
+.navbar{
+
+  padding: 0 60px;
+}
+.highlights h3{
+  font-size: 3vw;
+  padding: 5px 10px;
+  border-left: 3px solid var(--prime);
+}
+
+.highlights h1{
+  font-size: 6vw;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
